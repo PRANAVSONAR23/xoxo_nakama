@@ -6,7 +6,7 @@
 ### 🖼️ Matchmaking Screen
 
 ![Matchmaking](image1.png)
-
+![GamePlay] (demo.png)
 
 # 🎮 Nakama Real‑Time Multiplayer Game
 
