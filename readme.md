@@ -2,15 +2,6 @@
 
 A scalable real‑time multiplayer game built using **Nakama**, **TypeScript**, and **Docker**, supporting concurrent matches, matchmaking, and leaderboard tracking.
 
-This README includes:
-
-* Project overview
-* Features
-* Architecture
-* Setup guide
-* Folder structure
-* Demo images (placeholders)
-* How the game logic works
 
 ---
 
@@ -48,11 +39,6 @@ The example shown here represents a **Tic-Tac-Toe** game, but the structure supp
 * Scalable to thousands of matches
 * Game state stored per match
 
-### 🏆 Leaderboard System
-
-* Track wins, losses, and win streaks
-* Global Ranking system
-* Easily extendable for seasonal leaderboards
 
 ### 🎁 Daily Rewards System
 
@@ -104,7 +90,7 @@ backend/
 │     ├── match_rpc.ts
 │     ├── daily_rewards.ts
 │     ├── types.ts
-│     └── index.ts  (InitModule)
+│     └── main.ts  (InitModule)
 └── build/ (auto‑generated JS)
 ```
 
@@ -123,7 +109,7 @@ Make sure you have:
 ### 2️⃣ Install Node Modules
 
 ```
-pm install
+npm install
 ```
 
 ### 3️⃣ Build TypeScript
@@ -154,7 +140,7 @@ Which means your module is registered.
 
 ## 🧪 Demo Images (Placeholders)
 
-Add your game screenshots here:
+
 
 ### 🖼️ Matchmaking Screen
 
@@ -239,25 +225,10 @@ docker build -t nakama-game .
 docker run nakama-game
 ```
 
----
-
-## 📄 License
-
-This project is open-source under MIT License.
-
----
-
-## 🙌 Contributing
-
-Pull requests are welcome! Feel free to extend:
-
-* More game types
-* More leaderboard metrics
-* Anti-cheat logic
-* Seasonal tournaments
 
 ---
 
 ## 📫 Contact
 
-For help or collaboration, reach out anytime!
+pranavsonar2311@gmail.com
+9156120635
