@@ -1,3 +1,20 @@
+
+## 🧪 Demo Images (Placeholders)
+
+
+
+### 🖼️ Matchmaking Screen
+
+![Matchmaking](docs/images/matchmaking.png)
+
+### 🖼️ Gameplay Screen
+
+![Gameplay](docs/images/gameplay.png)
+
+### 🖼️ Leaderboard
+
+![Leaderboard](docs/images/leaderboard.png)
+
 # 🎮 Nakama Real‑Time Multiplayer Game
 
 A scalable real‑time multiplayer game built using **Nakama**, **TypeScript**, and **Docker**, supporting concurrent matches, matchmaking, and leaderboard tracking.
@@ -136,25 +153,6 @@ JavaScript logic loaded.
 
 Which means your module is registered.
 
----
-
-## 🧪 Demo Images (Placeholders)
-
-
-
-### 🖼️ Matchmaking Screen
-
-![Matchmaking](docs/images/matchmaking.png)
-
-### 🖼️ Gameplay Screen
-
-![Gameplay](docs/images/gameplay.png)
-
-### 🖼️ Leaderboard
-
-![Leaderboard](docs/images/leaderboard.png)
-
----
 
 ## 🔧 Game Logic Explanation
 
