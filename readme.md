@@ -5,15 +5,8 @@
 
 ### 🖼️ Matchmaking Screen
 
-![Matchmaking](docs/images/matchmaking.png)
+![Matchmaking](image1.png)
 
-### 🖼️ Gameplay Screen
-
-![Gameplay](docs/images/gameplay.png)
-
-### 🖼️ Leaderboard
-
-![Leaderboard](docs/images/leaderboard.png)
 
 # 🎮 Nakama Real‑Time Multiplayer Game
 
