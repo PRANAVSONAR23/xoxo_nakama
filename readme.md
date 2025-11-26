@@ -1,9 +1,5 @@
 
-## 🧪 Demo Images (Placeholders)
-
-
-
-### 🖼️ Matchmaking Screen
+## 🧪 Demo Images
 
 ![Matchmaking](image1.png)
 ![GamePlay](demo.png)
@@ -63,7 +59,7 @@ The example shown here represents a **Tic-Tac-Toe** game, but the structure supp
 ```
 +------------------------------+
 |          Client App          |
-|  (Web / Mobile / Unity etc.) |
+|            (Web ) 
 +--------------+---------------+
                |
                | WebSocket & RPC
