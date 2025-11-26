@@ -1,20 +1,27 @@
-const rpcIdRewards = 'rewards_js';
-const rpcIdFindMatch = 'find_match_js';
+import "./match_handler";
+import "./match_rpc";
+import "./daily_rewards";
+import "./types"
+var moduleName = (globalThis as any).moduleName ?? "your_match_module_name";
 
-function InitModule(ctx: nkruntime.Context, logger: nkruntime.Logger, nk: nkruntime.Nakama, initializer: nkruntime.Initializer) {
-    initializer.registerRpc(rpcIdRewards, rpcReward);
+(globalThis as any).InitModule = function (
+  ctx: nkruntime.Context,
+  logger: nkruntime.Logger,
+  nk: nkruntime.Nakama,
+  initializer: nkruntime.Initializer
+) {
+  initializer.registerMatch(moduleName, {
+    matchInit: (globalThis as any).matchInit,
+    matchJoinAttempt: (globalThis as any).matchJoinAttempt,
+    matchJoin: (globalThis as any).matchJoin,
+    matchLeave: (globalThis as any).matchLeave,
+    matchLoop: (globalThis as any).matchLoop,
+    matchTerminate: (globalThis as any).matchTerminate,
+    matchSignal: (globalThis as any).matchSignal,
+  });
 
-    initializer.registerRpc(rpcIdFindMatch, rpcFindMatch);
+  initializer.registerRpc("find_match_js", (globalThis as any).rpcFindMatch);
+  initializer.registerRpc("rewards_js", (globalThis as any).rpcReward);
 
-    initializer.registerMatch(moduleName, {
-        matchInit,
-        matchJoinAttempt,
-        matchJoin,  
-        matchLeave,
-        matchLoop,
-        matchTerminate,
-        matchSignal,
-    });
-
-    logger.info('JavaScript logic loaded.');
-}
+  logger.info("JavaScript logic loaded.");
+};

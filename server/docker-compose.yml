@@ -2,7 +2,7 @@ version: '3'
 services:
   postgres:
     command: postgres -c shared_preload_libraries=pg_stat_statements -c pg_stat_statements.track=all
-    container_name: template_nk_postgres
+    container_name: nk_postgres
     environment:
       - POSTGRES_DB=nakama
       - POSTGRES_PASSWORD=localdb
@@ -23,7 +23,7 @@ services:
 
   nakama:
     build: .
-    container_name: template_nk_backend
+    container_name: nk_backend
     depends_on:
       - postgres
     entrypoint:

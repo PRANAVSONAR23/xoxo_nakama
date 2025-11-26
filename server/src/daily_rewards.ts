@@ -1,4 +1,4 @@
-function rpcReward(context: nkruntime.Context, logger: nkruntime.Logger, nk: nkruntime.Nakama, payload: string): string {
+(globalThis as any).rpcReward = function (context: nkruntime.Context, logger: nkruntime.Logger, nk: nkruntime.Nakama, payload: string): string {
     if (!context.userId) {
         throw Error('No user ID in context');
     }
